@@ -3,13 +3,20 @@
     display: grid;
     grid-area: content;
     grid-template-areas: 
+        "author       author"
+        "title        title"
+        "time         btn";
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 1.5rem;
+    padding: 1rem;
+    row-gap: .5rem;
+}
+
+.card__content.--emphasis {
+    grid-template-areas: 
         "description  description"
         "title        title"
         "author       author"
         "time         visualizations"
         "btn          btn";
-    grid-template-columns: repeat(2, 1fr);
-    line-height: 1.5rem;
-    padding: 1rem;
-    row-gap: .5rem;
 }

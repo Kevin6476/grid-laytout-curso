@@ -5,9 +5,24 @@
     padding: .5rem 1rem;
 }
 
-.main__title { 
-    color: var(--fc-white);
+.main__title{
     font-size: 2rem;
+}
+
+.most-watched__title {
+    font-size: 1.15rem;
+    margin-top: 2rem!important;
+}
+
+.main__title,
+.most-watched__title { 
+    color: var(--fc-white);
     font-weight: 700;
     margin: 1.5rem 0 1rem;
+}
+
+
+.most-watched {
+    display: flex;
+    flex-direction: column;
 }

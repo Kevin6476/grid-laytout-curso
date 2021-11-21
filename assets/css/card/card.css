@@ -7,6 +7,12 @@
         "banner  banner"
         "content content";
     grid-template-columns: 1fr;
-    grid-template-rows: 37.7vh auto;    
+    grid-template-rows: 19.77vh auto;    
     justify-items: stretch;
+    margin-bottom: 1rem;
+}
+
+.card.--emphasis {
+    grid-template-rows: 37.7vh auto;    
+    margin-bottom: 0;
 }

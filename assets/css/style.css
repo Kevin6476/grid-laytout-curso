@@ -4,11 +4,11 @@
 }
 
 :root {
-    --bc-btn-mobile: #0480DC;
+    --bc-btn-mobile: #025697;
     --bc-card-mobile: #2C343A;
     --bc-header-mobile: #15191C;
     --bc-main-mobile: #1D232A;
-    --fc-gray: #95999C;
+    --fc-gray: #EBEBEB;
     --fc-white: #FDFDFD;
     --g-font: 'Open Sans', 'icones', sans-serif;
     --l-height-menu-footer-mobile: 56px;
@@ -24,4 +24,11 @@ body {
         "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 56px minmax(calc(100vh - var(--l-height-menu-footer-mobile) * 2), auto) 56px;
+    line-height: 24px;
+}
+
+.--hide {
+    position: absolute;
+    left: -100vw;
+    color: transparent;
 }

@@ -2,11 +2,22 @@
     background-color: var(--bc-btn-mobile);
     border-radius: .5rem;
     grid-area: btn;
+    justify-self: flex-end;
     padding: .5rem;
     text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
 }
 
 .card__btn::before {
     content: '\e90b';
+}
+
+.card__btn.--emphasis {
+    justify-self: stretch;
+    font-size: 1rem;
+}
+
+.card__btn.--emphasis::before {
     margin-right: .5rem;
 }
