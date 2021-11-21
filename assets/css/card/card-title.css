@@ -3,3 +3,7 @@
     grid-area: title;
     margin-bottom: 1rem;
 }
+
+.card__title.--emphasis {
+    margin-bottom: 0;
+}
