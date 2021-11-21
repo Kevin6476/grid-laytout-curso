@@ -5,7 +5,7 @@
     grid-template-areas: 
         "author       author"
         "title        title"
-        "time         btn";
+        "time-price   btn";
     grid-template-columns: repeat(2, 1fr);
     line-height: 1.5rem;
     padding: 1rem;
@@ -17,6 +17,6 @@
         "description  description"
         "title        title"
         "author       author"
-        "time         visualizations"
+        "time-price   visualizations"
         "btn          btn";
 }

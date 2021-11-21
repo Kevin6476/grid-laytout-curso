@@ -12,7 +12,7 @@
 }
 
 .card__info.--time {
-    grid-area: time;
+    grid-area: time-price;
 }
 
 .card__info.--time::before {
@@ -25,6 +25,14 @@
 
 .card__info.--visualizations::before {
     content: '\e90f';
+}
+
+.card__info.--dollar-sign {
+    grid-area: time-price;
+}
+
+.card__info.--dollar-sign::before {
+    content: '\e905';
 }
 
 

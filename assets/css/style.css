@@ -27,8 +27,36 @@ body {
     line-height: 24px;
 }
 
+.backgroud {
+    display: none;
+}
+
+.backgroud.block-background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    top: var(--l-height-menu-footer-mobile);
+    z-index: 1;
+}
+
+.--block-scroll {
+    overflow-y: hidden;
+}
+
 .--hide {
     position: absolute;
     left: -100vw;
     color: transparent;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--bc-header-mobile);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fc-white);
+    font-size: .8rem;
 }

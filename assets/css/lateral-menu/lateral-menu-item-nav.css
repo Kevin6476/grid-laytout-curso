@@ -1,0 +1,5 @@
+.lateral-menu__item-nav {
+    color: var(--fc-gray);
+    box-sizing: content-box;
+    line-height: 4; 
+}

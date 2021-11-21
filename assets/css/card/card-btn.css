@@ -12,10 +12,6 @@
     justify-content: center;
 }
 
-.card__btn::before {
-    content: '\e90b';
-}
-
 .card__btn.--emphasis {
     justify-self: stretch;
     font-size: .9rem;
@@ -24,4 +20,14 @@
 .card__btn.--emphasis::before {
     margin-right: .5rem;
     font-size: 1.3rem;
+}
+
+
+.--play::before {
+    content: '\e90b';
+}
+
+
+.--purchase::before {
+    content: '\e901';
 }
