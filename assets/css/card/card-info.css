@@ -1,0 +1,24 @@
+.card__info {
+    color: var(--fc-gray);
+    font-size: .9rem;
+}
+
+.--time {
+    grid-area: time;
+}
+
+.--time::before {
+    content: '\e90c';
+    margin-right: .5rem;
+}
+
+.--visualizations {
+    grid-area: visualizations;
+}
+
+.--visualizations::before {
+    content: '\e90f';
+    margin-right: .5rem;
+}
+
+

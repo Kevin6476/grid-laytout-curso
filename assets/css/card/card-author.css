@@ -1,0 +1,5 @@
+.card__author {
+    color: var(--fc-gray);
+    font-size: .9rem;
+    grid-area: author;
+}

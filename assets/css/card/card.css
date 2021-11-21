@@ -1,0 +1,12 @@
+.card {
+    align-items: stretch;
+    background-color: var(--bc-card-mobile);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas: 
+        "banner  banner"
+        "content content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 37.7vh auto;    
+    justify-items: stretch;
+}

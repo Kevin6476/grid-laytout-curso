@@ -1,0 +1,4 @@
+.card__description {
+    grid-area: description;
+    line-height: 2rem;
+}

@@ -4,15 +4,24 @@
 }
 
 :root {
+    --bc-btn-mobile: #0480DC;
+    --bc-card-mobile: #2C343A;
     --bc-header-mobile: #15191C;
+    --bc-main-mobile: #1D232A;
+    --fc-gray: #95999C;
     --fc-white: #FDFDFD;
+    --g-font: 'Open Sans', 'icones', sans-serif;
+    --l-height-menu-footer-mobile: 56px;
 }
 
 body {
+    background-color: var(--bc-main-mobile);
     display: grid;
+    font-family: var(--g-font);
     grid-template-areas:
         "header header header"
         "main   main   main"
         "footer footer footer";
-    grid-template-rows: 56px auto 56px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 56px minmax(calc(100vh - var(--l-height-menu-footer-mobile) * 2), auto) 56px;
 }

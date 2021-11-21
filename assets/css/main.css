@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    padding: .5rem 1rem;
+}
+
+.main__title { 
+    color: var(--fc-white);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem;
+}
