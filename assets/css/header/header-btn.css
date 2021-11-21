@@ -1,0 +1,13 @@
+.header__btn {
+    color: var(--fc-white);
+    font-family: 'icones', sans-serif;
+    font-size: 1.5rem;
+}
+
+.header__btn.--menu i::before {
+    content: '\e904'
+}
+
+.header__btn.--notify i::before {
+    content: '\e906'
+}

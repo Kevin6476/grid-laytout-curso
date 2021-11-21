@@ -1,0 +1,9 @@
+.header {
+    align-items: center;
+    background-color: var(--bc-header-mobile);
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: header;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}

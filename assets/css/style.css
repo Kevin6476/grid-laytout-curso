@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+:root {
+    --bc-header-mobile: #15191C;
+    --fc-white: #FDFDFD;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main   main   main"
+        "footer footer footer";
+    grid-template-rows: 56px auto 56px;
+}
