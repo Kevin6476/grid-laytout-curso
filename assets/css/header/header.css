@@ -1,5 +1,5 @@
 .header {
-    align-items: center;
+    align-items: stretch;
     background-color: var(--bc-header-mobile);
     display: flex;
     flex-wrap: nowrap;
