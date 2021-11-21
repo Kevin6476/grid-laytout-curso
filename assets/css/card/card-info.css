@@ -1,24 +1,30 @@
 .card__info {
     color: var(--fc-gray);
     font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
-.--time {
+.card__info::before{
+    content: '';
+    margin-right: .2rem;
+}
+
+.card__info.--time {
     grid-area: time;
 }
 
-.--time::before {
+.card__info.--time::before {
     content: '\e90c';
-    margin-right: .5rem;
 }
 
-.--visualizations {
+.card__info.--visualizations {
     grid-area: visualizations;
 }
 
-.--visualizations::before {
+.card__info.--visualizations::before {
     content: '\e90f';
-    margin-right: .5rem;
 }
 
 

@@ -7,6 +7,9 @@
     text-align: center;
     align-self: center;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__btn::before {
@@ -15,9 +18,10 @@
 
 .card__btn.--emphasis {
     justify-self: stretch;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .card__btn.--emphasis::before {
     margin-right: .5rem;
+    font-size: 1.3rem;
 }
