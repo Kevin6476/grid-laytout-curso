@@ -5,8 +5,205 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HZC | Home</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- Declarations styles global -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Header Styles -->
+    <link rel="stylesheet" href="./assets/css/header/header.css" />
+    <link rel="stylesheet" href="./assets/css/header/header-btn.css" />
+    <link rel="stylesheet" href="./assets/css/header/header-logo.css" />
+
+    <!-- Lateral Menu -->
+    <link rel="stylesheet" href="./assets/css/lateral-menu/lateral-menu.css" />
+    <link rel="stylesheet" href="./assets/css/lateral-menu/lateral-menu-logo.css" />
+    <link rel="stylesheet" href="./assets/css/lateral-menu/lateral-menu-list-nav.css" />
+    <link rel="stylesheet" href="./assets/css/lateral-menu/lateral-menu-item-nav.css" />
+    <link rel="stylesheet" href="./assets/css/lateral-menu/lateral-menu-link.css" />
+    
+    <!-- Card -->
+    <link rel="stylesheet" href="./assets/css/card/card.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-img.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-content.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-description.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-title.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-author.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-info.css" />
+    <link rel="stylesheet" href="./assets/css/card/card-btn.css" />
+
 </head>
 <body>
-    
+    <div id="block-background" class="backgroud"></div>
+    <header class="header">
+        <button id="btn-menu" class="header__btn --menu" aria-label="Menu navegação"><i></i></button>
+        <img class="header__logo" src="./assets/img/logo.svg" alt="Banner do Movimento HZC"></img>
+        <button class="header__btn --notify" aria-label="Notificações do usuário"><i></i></button>
+    </header>
+
+    <nav id="menu-lateral" class="lateral-menu --hide">
+        <img class="lateral-menu__logo" src="./assets/img/logo.svg" alt="">
+        <ul class="lateral-menu__list-nav">
+            <li class="lateral-menu__item-nav">
+                <a href="#" class="lateral-menu__link --main">Destaques</a>
+            </li>
+            <li class="lateral-menu__item-nav">
+                <a href="#" class="lateral-menu__link --videos">Videos</a>
+            </li>
+            <li class="lateral-menu__item-nav">
+                <a href="#" class="lateral-menu__link --peaks">Picos</a>
+            </li>
+            <li class="lateral-menu__item-nav">
+                <a href="#" class="lateral-menu__link --members">Integrantes</a>
+            </li>
+            <li class="lateral-menu__item-nav">
+                <a href="#" class="lateral-menu__link --shirts">Camisas</a>
+            </li>
+            <li class="lateral-menu__item-nav">
+                <a href="#" class="lateral-menu__link --paintings">Pinturas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <h1 class="main__title">Destaques</h1>
+        <article class="card --emphasis">
+            <img class="card__img"
+                 src="./assets/img/banner-mobile_1.png" 
+                 alt="Gráfite exposto na maior e mais frequentada pista de stake em SP sobre a nova geração." />
+            <div class="card__content --emphasis">
+                <p class="card__description"><span class="--hide">Top video </span>Mais visto na semana</p>
+                <h2 class="card__title --emphasis">Artista de rua.</h2>
+                <p class="card__author"><span class="--hide">do Autor: </span>Kevin Picoli.</p>
+                <p class="card__info --time"><span class="--hide">Tempo do video: </span> 33 minutos</p>
+                <p class="card__info --visualizations"><span class="--hide">com </span>257 visualizações</p>
+                <button class="card__btn --emphasis --play">Assistir agora</button>
+            </div>
+        </article>
+        <section class="most-watched">
+            <h2 class="most-watched__title">Vídeos mais vistos</h2>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/video_1.png" 
+                     alt="Sobre a vida da familia HAZ no ano de 2021" />
+                <div class="card__content">
+                    <h3 class="card__title" lang="en">HZC - Life is... /2021</h3>
+                    <p class="card__author"><span class="--hide">do Autor: </span>André Soares</p>
+                    <p class="card__info --time"><span class="--hide">Tempo do video: </span>27 minutos</p>
+                    <button class="card__btn --play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/video_2.png" 
+                     alt="O Skatista elétrico, esse não para nas manóbras por um instante!" />
+                <div class="card__content">
+                    <h3 class="card__title" lang="en">HZC - Electronic Skate</h3>
+                    <p class="card__author"><span class="--hide">do Autor: </span>Pedro Luiz</p>
+                    <p class="card__info --time"><span class="--hide">Tempo do video: </span>25 minutos</p>
+                    <button class="card__btn --play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/video_3.png" 
+                     alt="Músicas que a familia HZC escuta enquanto pratica o sport do skate" />
+                <div class="card__content">
+                    <h3 class="card__title" lang="en">HZC - SoundTracks ...</h3>
+                    <p class="card__author"><span class="--hide">do Autor: </span>João Martins</p>
+                    <p class="card__info --time"><span class="--hide">Tempo do video: </span>7 minutos</p>
+                    <button class="card__btn --play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/video_4.png" 
+                     alt="Melhores músicas de 2018 na opnião geral da comunidade de skate" />
+                <div class="card__content">
+                    <h3 class="card__title" lang="en">HZC - Best music for 2018</h3>
+                    <p class="card__author"><span class="--hide">da Autora: </span>Alice Santos</p>
+                    <p class="card__info --time"><span class="--hide">Tempo do video: </span>12 minutos</p>
+                    <button class="card__btn --play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <h2 class="main__title">Produtos da HZC</h2>
+        <article class="card --emphasis">
+            <img class="card__img"
+                 src="./assets/img/banner-mobile_2.png" 
+                 alt="Adesivo para shape de skate da HZC. Gato preto e fundo azul claro com o nome da Hyfflez" />
+            <div class="card__content --emphasis">
+                <p class="card__description"><span class="--hide">Mais vendido da semana </span>Nova arte</p>
+                <h2 class="card__title --emphasis">Only Zikas - Lagoa Dompa Club</h2>
+                <p class="card__author"><span class="--hide">do Autor: </span>Bruno do Shape</p>
+                <p class="card__info --dollar-sign"><span class="--hide">Preço do adesivo: </span>33,35</p>
+                <p class="card__info --visualizations"><span class="--hide">com </span>57 visualizações</p>
+                <button class="card__btn --emphasis --purchase">Comprar Agora</button>
+            </div>
+        </article>
+
+        <section class="most-watched">
+            <h2 class="most-watched__title">Camisas mais recentes</h2>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/produto_1.png" 
+                     alt="Sobre a vida da familia HAZ no ano de 2021" />
+                <div class="card__content">
+                    <h3 class="card__title" lang="en">IBM</h3>
+                    <p class="card__author"><span class="--hide">do Autor: </span>André Soares</p>
+                    <p class="card__info --dollar-sign"><span class="--hide">Preço da camisa: </span>28,98</p>
+                    <button class="card__btn --purchase" aria-label="Comprar Agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/produto_2.png" 
+                     alt="O Skatista elétrico, esse não para nas manóbras por um instante!" />
+                <div class="card__content">
+                    <h3 class="card__title" lang="en">Huflez Crew Philosophy Club</h3>
+                    <p class="card__author"><span class="--hide">do Autor: </span>Pedro Luiz</p>
+                    <p class="card__info --dollar-sign"><span class="--hide">Preço da camisa: </span>29,98</p>
+                    <button class="card__btn --purchase" aria-label="Comprar Agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/produto_3.png" 
+                     alt="Músicas que a familia HZC escuta enquanto pratica o sport do skate" />
+                <div class="card__content">
+                    <h3 class="card__title">Corujita noturna</h3>
+                    <p class="card__author"><span class="--hide">do Autor: </span>João Martins</p>
+                    <p class="card__info --dollar-sign"><span class="--hide">Preço da camisa: </span>29,98</p>
+                    <button class="card__btn --purchase" aria-label="Comprar Agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__img"
+                     src="./assets/img/produto_4.png" 
+                     alt="Melhores músicas de 2018 na opnião geral da comunidade de skate" />
+                <div class="card__content">
+                    <h3 class="card__title">GGG - Gatin G Gorro</h3>
+                    <p class="card__author"><span class="--hide">da Autora: </span>Alice Santos</p>
+                    <p class="card__info --dollar-sign"><span class="--hide">Preço da camisa: </span>29,98</p>
+                    <button class="card__btn --purchase" aria-label="Comprar Agora"></button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>HZC - &copy; Todos os Direitos reservados - 2021</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

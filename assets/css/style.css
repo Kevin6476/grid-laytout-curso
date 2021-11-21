@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+:root {
+    --bc-btn-mobile: #025697;
+    --bc-card-mobile: #2C343A;
+    --bc-header-mobile: #15191C;
+    --bc-main-mobile: #1D232A;
+    --fc-gray: #95999C;
+    --fc-white: #FDFDFD;
+    --g-font: 'Open Sans', 'icones', sans-serif;
+    --l-height-menu-footer-mobile: 56px;
+}
+
+body {
+    background-color: var(--bc-main-mobile);
+    display: grid;
+    font-family: var(--g-font);
+    grid-template-areas:
+        "header header header"
+        "main   main   main"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 56px minmax(calc(100vh - var(--l-height-menu-footer-mobile) * 2), auto) 56px;
+    line-height: 24px;
+}
+
+.backgroud {
+    display: none;
+}
+
+.backgroud.block-background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    top: var(--l-height-menu-footer-mobile);
+    z-index: 1;
+}
+
+.--block-scroll {
+    overflow-y: hidden;
+}
+
+.--hide {
+    position: absolute;
+    left: -100vw;
+    color: transparent;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--bc-header-mobile);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fc-white);
+    font-size: .8rem;
+}

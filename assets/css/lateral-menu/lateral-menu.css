@@ -1,0 +1,18 @@
+.lateral-menu {
+    align-items: stretch;
+    background-color: var(--bc-header-mobile);
+    color: var(--fc-white);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: var(--l-height-menu-footer-mobile);
+    transition: left 500ms;
+    width: 70vw;
+    z-index: 2;
+}
+
+.lateral-menu.--hide {
+    left: -100vw;
+}

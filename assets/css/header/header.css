@@ -1,0 +1,10 @@
+.header {
+    align-items: stretch;
+    background-color: var(--bc-header-mobile);
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: header;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.16);
+}

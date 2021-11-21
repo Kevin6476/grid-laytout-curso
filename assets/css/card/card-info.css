@@ -1,0 +1,38 @@
+.card__info {
+    color: var(--fc-gray);
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.card__info::before{
+    content: '';
+    margin-right: .2rem;
+}
+
+.card__info.--time {
+    grid-area: time-price;
+}
+
+.card__info.--time::before {
+    content: '\e90c';
+}
+
+.card__info.--visualizations {
+    grid-area: visualizations;
+}
+
+.card__info.--visualizations::before {
+    content: '\e90f';
+}
+
+.card__info.--dollar-sign {
+    grid-area: time-price;
+}
+
+.card__info.--dollar-sign::before {
+    content: '\e905';
+}
+
+

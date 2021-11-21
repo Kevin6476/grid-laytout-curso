@@ -1,0 +1,43 @@
+.lateral-menu__link {
+    outline:none;   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 2rem;
+}
+
+.lateral-menu__link:focus,
+.lateral-menu__link:hover {
+    outline: none;
+    color: var(--fc-white);
+    border-left: .5rem solid var(--fc-white);
+    padding: 0 calc(2rem - .5rem);
+}
+
+.lateral-menu__link::before {
+    margin-right: 1rem;
+}
+
+.lateral-menu__link.--main::before {
+    content: '\e902';
+}
+
+.lateral-menu__link.--videos::before {
+    content: '\e90e';
+}
+
+.lateral-menu__link.--peaks::before {
+    content: '\e909';
+}
+
+.lateral-menu__link.--members::before {
+    content: '\e903';
+}
+
+.lateral-menu__link.--shirts::before {
+    content: '\e900';
+}
+
+.lateral-menu__link.--paintings::before {
+    content: '\e90a';
+}
